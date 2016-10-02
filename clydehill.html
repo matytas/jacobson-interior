@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <title>JACOBSON INTERIOR</title>
+      <meta name="author" content="Dillon w/ Nearabout Creative" />
+      <meta name="description" content="JACOBSON INTERIOR DESIGN IS A BELLEVUE BASED INTERIOR DESIGN FIRM">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+      <script src="js/jquery-1.12.0.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <script type="text/javascript" src="js/scripts.js"> </script>
+      <link rel="stylesheet" href="css/unslider.min.css">
+      <script src="js/unslider-min.js"></script>
+      <link type="text/css" rel="stylesheet" href="css/lightslider.css">
+      <script src="js/lightslider.min.js"></script>
+      <link rel="stylesheet" href="css/animsition.min.css">
+      <script src="js/animsition.min.js"></script>
+      <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="css/popupstyle.css">
+      <style>
+      #leftbutton{
+            float:left;
+            background-image: url(img/web/cirillo/cirilloweblarge05.jpg);
+            cursor: url(img/leftarrow.png), auto;}
+      #rightbutton{
+            float:right;
+            background-image: url(img/web/gigharbor/gigharborweb4.jpg);
+            cursor: url(img/rightarrow.png), auto;}
+      </style>
+      <script src="js/lightslider.js"></script> 
+    <script>
+       $(document).ready(function() {
+                  $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#image-gallery').lightSlider({
+                gallery:true,
+                mode:'fade',
+                item:1,
+                thumbItem:5,
+                slideMargin: 0,
+                speed:500,
+                auto:false,
+                loop:true,
+                thumbMargin:20,
+                enableDrag:false,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+            });
+    </script>
+</head>
+<body class="animsition"
+ data-animsition-in-class="fade-in"
+ data-animsition-out-class="fade-out"
+ >
+      <div id="header">
+             <a class="animsition-link" href="home.html">
+                  <img id="logo" class="quickfade" src="./img/JID.svg"/></img>
+            </a>
+            <ul id="menu">
+              <li><a class="smoothScroll animsition-link" href="home.html#graybox">ABOUT</a></li>
+              <li><a class="animsition-link" href="work2.html">WORK</a></li>
+              <li><a class="smoothScroll animsition-link" href="contact.html">CONTACT</a></li>
+            </ul>
+                        <p><button id="trigger-overlay" class="whitetext smalltext quickfade" type="button">MENU</button></p>
+      <div class="overlay overlay-scale">
+      <button type="button" class="overlay-close fade">Close</button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade animsition-link" href="home.html">HOME</a>
+          <a id="hammenu" class="blacktext quickfade animsition-link" href="home.html#graybox">ABOUT</a>
+          <a id="hammenu" class="blacktext quickfade animsition-link" href="work2.html">WORK</a>
+          <a id="hammenu" class="blacktext quickfade animsition-link" href="contact.html">CONTACT</a>
+        </div>
+      </div>
+  </div>
+      </div>
+      <hr id="menuhr">
+      <p id="titlep">
+            CLYDE HILL 
+      </p>
+      <hr id="titlehr">
+      <div class="demo">
+            <div class="item">            
+                  <div class="clearfix" >
+                      <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                         <li data-thumb="img/web/clyde/clydewebthumb5.jpg"> 
+                              <img  style="width:126%;margin-left:auto;margin-right:auto;" src="img/web/clyde/clydeweb5.jpg" />
+                               </li>
+                          <li data-thumb="img/web/clyde/clydewebthumb2.jpg"> 
+                              <img  style="width:51%;margin-left:24.5%;" src="img/web/clyde/clydeweb2.jpg" />
+                               </li>
+                          <li data-thumb="img/web/clyde/clydewebthumb3.jpg"> 
+                              <img  style="width:115%;margin-left:-8%;" src="img/web/clyde/clydeweb3.jpg" />
+                               </li>
+                          <li data-thumb="img/web/clyde/clydewebthumb4.jpg"> 
+                              <img  style="width:121%;margin-left:-11%" src="img/web/clyde/clydeweb4.jpg" />
+                               </li>
+                          
+                           <li data-thumb="img/web/clyde/clydewebthumb1.jpg"> 
+                              <img style="width:101%" src="img/web/clyde/clydeweb1.jpg" />
+                               </li>     
+                      </ul>
+                  </div>
+            </div>
+      </div>
+<div id="mobilepics">
+  <img  style="width:100%;" src="img/web/clyde/clydeweb5.jpg" />
+  <img  style="width:100%;" src="img/web/clyde/clydeweb3.jpg" />
+  <img  style="width:100%;" src="img/web/clyde/clydeweb4.jpg" />
+  <img style="width:100%" src="img/web/clyde/clydeweb1.jpg" />
+  <img  style="width:100%;" src="img/web/clyde/clydeweb2.jpg" />
+</div>
+      <div id="buttoncontainer">
+            <div id="leftbutton">
+                  <a id="left" href="evergreenpoint.html">
+                    <p class="animsition-link" id="opacity">EVERGREEN POINT</p>
+                     <p id="arrow" class="leftarrow"> < </p>
+                  </a>
+            </div>
+              <div id="rightbutton">
+                <a class="animsition-link" id="right" href="gigharbor.html">
+                  <p id="opacity">GIG HARBOR</p>
+                   <p id="arrow" class="rightarrow"> > </p>
+                </a>
+            </div>
+            <div id="middlebutton">
+              <a class="animsition-link" id="middle" href="work2.html">
+                <p id="viewall"> VIEW ALL </p>
+              </a>
+            </div>
+      </div>
+      <div id="footer">
+         <p id="jacobsoninterior">JACOBSON INTERIOR DESIGN</p>
+  <HR id="jacobsoninteriorhr">
+  <p id="address">227 BELLEVUE WAY NE, WA 98004, SUITE 236</p>
+  <p id="phoneemail"><span id="email"><a href="mailto:nichole@jacobsoninterior.com?Subject=Inqury" target="_top">NICHOLE@JACOBSONINTERIOR.COM</a></span></p> 
+  <p id="phoneemail">+1 425.531.0140</p>
+  <p id="phoneemail"><span id="nearabout">SITE BY NEARABOUT</span></p>
+      </div>
+      <script src="js/index.js"></script>
+
+</body>
+</head>

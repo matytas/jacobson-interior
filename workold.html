@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <title>JACOBSON INTERIOR</title>
+      <meta name="author" content="Dillon w/ Nearabout Creative" />
+      <meta name="description" content="JACOBSON INTERIOR DESIGN IS A BELLEVUE BASED INTERIOR DESIGN FIRM">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+      <script src="js/jquery-1.12.0.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+            <script type="text/javascript" src="js/scripts.js"> </script>
+      <link rel="stylesheet" href="css/unslider.css">
+      <script src="js/unslider-min.js"></script>
+
+
+</head>
+<script>
+  jQuery(document).ready(function($) {
+    $('.my-slider').unslider({
+      autoplay: true,
+      arrows: false,
+      animation: 'fade',
+      delay: 5500,
+      nav: false
+    });
+  });
+</script>
+<style>
+
+#headcontainerleft{
+margin:0 35px 70px 105px;
+}
+#headcontainermiddle{
+margin: 0 35px 70px 35px;
+}
+#headcontainerright{
+margin: 0 105px 70px 35px;
+}
+.headshot{
+width:350px;
+height:315px;
+max-height:315px;
+display:inline-block;
+position:relative;
+background-color:gray;
+background-size:auto 100%;
+background-position: center;
+}
+
+#widthcap{
+  max-width:1400px;
+  margin-top:70px;
+}
+p{
+display:table;
+text-align: center;
+vertical-align: middle;
+line-height: 315px;
+margin-left:auto;
+margin-right:auto;
+font-size:12px;
+font-family:helvetica;
+word-spacing:5px;
+letter-spacing:1.5px;
+line-height:315px;
+color:black;
+}
+hr{
+  display:table;
+  margin-top:-145px;
+  text-align: center;
+  vertical-align: middle;
+  bottom:150px;
+  margin-left:auto;
+  margin-right:auto;
+  border:none;
+  color:black;
+  height: 1px;
+  background-color: black;
+}
+@media only screen and (max-width: 1415px) {
+  #headcontainerleft{
+  margin:0;
+  }
+  #headcontainermiddle{
+  margin: 0;
+  }
+  #headcontainerright{
+  margin: 0;
+  }
+.one{
+  margin-left:auto!important;
+  margin-right:35px!important;
+  margin-bottom:70px!important;
+}
+.two{
+  margin-left:35px!important;
+  margin-right:auto!important;
+  margin-bottom:70px!important;
+}
+div#header{
+  max-width:770px;
+}
+#logo{margin-left:0;}
+ul#menu{margin-right:0;}
+#widthcap{
+  width:770px;
+}
+#widthcap{
+  max-width:770px;
+  margin-left:auto;
+  margin-right:auto;
+}
+ul#mobilemenu{
+  display:none;
+}}
+@media only screen and (max-width: 880px) {
+.headshot{
+  margin-bottom:70px;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+div#header{
+  max-width:350px;
+}
+#logo{margin-left:0;}
+ul#menu{margin-right:0;}
+  #widthcap{
+  max-width:350px;
+  margin-left:auto;
+  margin-right:auto;
+  }}
+@media only screen and (max-width: 880px) {
+ul#menu{
+  display:none;
+}
+ul#mobilemenu{
+  display:inline;
+margin-right:0;
+}}
+@media only screen and (min-width: 880px) {
+  ul#mobilemenu{
+    display:none;
+  }}
+  div.headshot:hover p{
+    opacity:1;
+    letter-spacing:1.8px;
+  }
+  p{
+    opacity:0;
+  }
+  hr#clyde{
+    width:30px;
+    opacity:0;
+  }
+  hr#issaquah{
+    width:180px;
+    opacity:0;
+  }
+  div.headshot:hover hr#issaquah{
+    width:190px;
+  }
+  div.headshot:hover hr#clyde{
+    width:50px;
+  }
+  div.headshot:hover hr#clyde,div.headshot:hover hr#issaquah{
+    opacity:1;
+  }
+#widthcap .headshot hr{
+    overflow:hidden;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width .5s ease-in-out,opacity .5s ease-in-out;
+}
+#widthcap .headshot p{
+    overflow:hidden;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out, letter-spacing .5s ease-in-out;
+}
+hr{
+}
+</style>
+</head>
+
+
+<body>
+  <div id="header">
+
+  <a href="home.html">
+  <img id="logo" class="quickfade" src="./img/JID.svg"/></img>
+  </a>
+
+  <ul id="menu">
+    <li><a id="" class="" href="work.html">WORK</a></li>
+    <li><a id="" class="" href="about.html">ABOUT</a></li>
+    <li><a id="" class="" href="press.html">PRESS</a></li>
+    <li><a id="" class="" href="contact.html">CONTACT</a></li>
+  </ul>
+  <ul id="mobilemenu">
+    <li><a href="work.html">MENU</a></li>
+  </ul>
+</div>
+
+<div id="widthcap">
+  <div data-scroll-reveal class="headshot one" id="headcontainerleft"><a href="kadaames.html"></a>
+<p>ISSAQUAH HIGHLANDS <hr id="issaquah"></p>
+
+  </div><div data-scroll-reveal id="headcontainermiddle" class="headshot two"><a href="se7en.html"></a>
+<p>EVERGREEN POINT</p><hr id="clyde"></p>
+  </div><div data-scroll-reveal id="headcontainerright" class="headshot one"><a href="stealfsoulja.html"></a>
+<p>CLYDE HILL</p><hr id="clyde"></p>
+  </div><div data-scroll-reveal id="headcontainerleft" class="headshot two"><a href="mcchicken.html"></a>
+<p>MEDIA</p><hr id="clyde"></p>
+  </div><div data-scroll-reveal id="headcontainermiddle" class="headshot one"><a href="se7en.html"></a>
+<p>GIG HARBOR</p><hr id="clyde"></p>
+  </div><div data-scroll-reveal id="headcontainerright" class="headshot two"><a href="stealfsoulja.html"></a>
+<p>VASHION</p><hr id="clyde"></p>
+  </div><div data-scroll-reveal id="headcontainerleft" class="headshot one"><a href="mcchicken.html"></a>
+<p>YARROW POINT</p><hr id="clyde"></p>
+  </div><div data-scroll-reveal id="headcontainermiddle" class="headshot two"><a href="se7en.html"></a>
+<p>LOCHILEVEN</p><hr id="clyde"></p>
+  </div><div data-scroll-reveal id="headcontainerright" class="headshot one"><a href="stealfsoulja.html"></a>
+<p>yoyo</p><hr id="clyde"></p>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+</body>
+
+</html>
