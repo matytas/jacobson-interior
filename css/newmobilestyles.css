@@ -1,0 +1,267 @@
+@font-face {
+    font-family: gotham;
+    src: url(../GOTHAM-LIGHT.TTF);
+}
+@font-face {
+    font-family: gothamthin;
+    src: url(../Gotham-Thin.ttf);
+}
+@media only screen and (max-width: 1130px) {
+  #momheadshot{
+    margin-left:70px;
+  }
+  #abouttext{
+    margin-left:525px;
+    padding-right:35px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  #momheadshot{
+    margin-left:35px;
+  }
+  #abouttext{
+    margin-left:490px;
+  }
+}
+@media only screen and (min-width: 941px) {
+  div#mobilepics{
+    display:none;
+  }
+}
+ @media only screen and (min-width: 940px) {
+  button#trigger-overlay{
+    display:none;
+  }
+}
+@media only screen and (max-width: 940px) {
+  #abouttext{
+    margin-left:auto;
+    margin-right:auto;
+    width:auto;
+    max-width:500px;
+    padding-left:2.5%;
+    padding-right:2.5%;
+    padding-top:720px;
+    text-align:center;
+  }
+  #momheadshot{
+    height:560px;
+    width:420px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:gray;
+    position:absolute;
+    left: 0;  right: 0;
+    margin-top:70px;
+  }
+  #fabric{
+    margin-top:320px;
+  }
+  #graybox{
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    padding-bottom:70px;
+    height:auto;
+    margin-bottom:50px;
+    margin-top:25px!important;
+  }
+  #fabric{
+    margin-top:0;
+  }
+  #momheadshot{
+    width:95%;
+    max-width:420px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  div.demo{
+    display:none;
+  }
+  #titlep{
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 939px) {
+  ul#menu{
+    display:none;
+  }
+  #logo{
+    margin-left:35px;
+  }
+  ul#mobilemenu{
+    margin-right:35px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  #projectnametwo{
+    bottom:295px;
+    width:100%;
+    left:0%;
+    right:0%;
+    text-align:center;
+  }
+  #viewprojecttwo{
+    width:100%;
+    left:0%;
+    right:0%;
+    text-align:center;
+  }
+  #titleboxhrtwo{
+    bottom:245px;
+    position:absolute;
+    right:70px;
+    width:236px;
+    height:1px;
+    background-color:white;
+    border-style:none;
+    opacity:1;
+    left:0;
+    right:0;
+    margin:auto;
+}}
+@media only screen and (max-width: 900px) {
+  #momheadshot{
+    margin-left:0px;
+  }
+  #abouttext{
+    margin-left:455px;
+  }
+}
+@media only screen and (min-width: 800px) {
+ul#slider li{
+  margin-top: calc(-50vw + 50%);
+  height:10vw;
+ }}
+@media only screen and (min-width: 800px) {
+  ul#slider li#fix{
+    width:105%;
+} }
+@media only screen and (min-width: 800px) {
+ul#slider li{
+  margin-top: calc(-50vw + 50%);
+  height:10vw;
+ }}
+@media only screen and (max-width: 800px) {
+  
+  .my-slider{
+    height:480px;
+    max-height:750px;
+    overflow:hidden;
+    width:95%;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  ul#slider li img, ul#slider li img#fix {
+    height:auto;
+    width:760px;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    position: absolute;
+    top: -9541px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 675px) {
+  #work{
+    height:80px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto; 
+    background-color: rgba(65, 64, 66, 0.65);
+    font-size:30px;
+    position: relative;
+    top: 42%;
+    transform: translateY(-50%);
+    text-align:center;
+  }
+  #work p{
+    font-size: 25px;
+    font-family: gotham;
+    text-align: center;
+    letter-spacing: 4px;
+    font-weight: 200;
+    line-height:80px;
+    color:white;
+  }
+  #work p{
+    letter-spacing: 6px;
+  }
+  #viewall{
+    font-size:18px;
+    letter-spacing:1px;
+  }
+  #viewall:hover{
+
+    letter-spacing:3px!important;
+  }
+  p#opacity{
+    font-size:15px;
+    padding-top:117.5px;
+    padding-bottom:117.5px;
+    letter-spacing:1px;
+    display:none;
+  }
+  p#viewall{
+    padding-top:30px;
+    padding-bottom:30px; 
+  }
+  #buttoncontainer{
+   height:100px; 
+  }
+#leftbutton, #rightbutton{
+ width:25%; 
+}
+#middlebutton{
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+#leftbutton{
+
+  border-width: 0 1px 0 0;
+  border-color:white;
+  border-style:solid;
+}
+#rightbutton{
+    border-width: 0 0 0 1px;
+  border-color:white;
+  border-style:solid;
+}
+#middlebutton p{
+  margin-left:0;
+  margin-right:0;
+}
+a#right, a#left{
+cursor:pointer!important;
+background-color: #414042!important;
+}
+}
+
+@media only screen and (max-width: 420px) {
+span#email{
+ font-size:12px; 
+}
+#abouttext{
+  text-align:left;
+  margin-left:2.5%;
+  }}
+@media only screen and (max-width: 420px) {
+#work p{
+  font-size:14px;
+  letter-spacing:4px;
+  }}
+ 

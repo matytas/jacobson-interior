@@ -304,6 +304,9 @@ body{
   margin-left:auto;
   margin-right:auto;
 }
+#nostyleno{
+  background-color: red;
+}
 #momheadshot{
   height:560px;
   width:420px;
