@@ -2,17 +2,16 @@
     font-family: gotham;
     src: url(../GOTHAM-LIGHT.TTF);
 }
-.row{
-  margin:0;
-}
+©
 #carousel-row{
-  width:100%;
+  width: 95vw;
 }
 div.item img{
   width:100%;
 }
 div.item{
 	max-height:85vh;
+  min-height:500px;
 }
 .float-right{
   float:right;
@@ -32,13 +31,16 @@ div.item{
   max-width:420px;
 }
 .center-block{
-  float:none;
+  /* min-height: 800px; */
+  /* float:none; */
 }
 p{
   font-family: gotham;
-  font-size: .8em;
+  font-size: .9em;
   letter-spacing: .05em;
   line-height:1.8em;
+  color: #000;
+  margin-bottom: 0px;
 }
 .no-side-pad{
   padding-left:0px;
@@ -61,6 +63,7 @@ p{
 #footer{
   height:420px;
   background-color:#f2f2f2;
+  margin-top: 87px;
 }
 .red{
   background-color: #f2f2f2;
@@ -89,32 +92,32 @@ p{
   }
 
   #footerjidsvg{
-  	width:190px;
+  	width: 288px;
   	margin-top:110px;
   }
    #headerjidsvg{
-  	width:140px;
-  	margin-top:24px;
+  	width: 185px;
+  	margin-top: 12px;
   	position: relative;
-  	left:30px;
   }
   .navbar{
   	margin-bottom:0px;
-  	height:80px;
+  	height: 90px;
   }
   p.footertext{
   	font-size:1em;
+  	color: black;
   }
   .mar-top-80{
   	margin-top:80px;
   }
   #footerhr{
-  	border-width:0px 0px .5px 0px;
+  	border-width:0px 0px 1px 0px;
   	border-color: black;
   	border-style: solid;
   	width:80%;
-  	max-width:400px;
-  	margin: 30px auto 30px auto;
+  	max-width:360px;
+  	margin: 0px auto 15px auto;
   }
   .container{
 	max-width: 100%;
@@ -170,7 +173,7 @@ div#navbar.navbar-collapse.collapse.in{
 }
 
 .navbar-nav {
-float: none!important;
+float: right!important;
 }
 
 .navbar-nav>li {
@@ -234,6 +237,58 @@ line-height: 54px;
 font-size: 3em;
 display:block !important;
 }
+.popup-container{
+  width:100vw;
+  height:100vh;
+  position: fixed;
+  top:0px;
+  right:0px;
+  left:0px;
+  bottom:0px;
+  z-index:100;
+  background-color:white;
+}
+h1{
+font-size:4em;
+font-family: gotham;
+}
+.pop-up-button{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#mobilemenubutton{
+
+}
+a h1{
+  text-decoration: none;
+  color:black;
+  opacity:1;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all  .3s ease;
+}
+a h1:hover a{
+  text-decoration: none;
+  opacity:.8;
+
+}
+#popup1close{
+  top:0;
+  right:40px;
+  position: fixed;
+  font-size:4em;
+}
+.navbar-inverse .navbar-nav>.active>a{
+  color:black;
+}
+ul.navbar-nav li{
+  color:black!important;
+}
+.navbar-inverse .navbar-nav{
+
+}
 @media screen and (max-width: 767px) {
 	#navbar ul li {
 		text-align:center;
@@ -242,9 +297,18 @@ display:block !important;
 		float:none;
 	}
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 650px) {
 .first{
 	padding-top:80px;
+}
+#popup1open{
+  display: none!important;
+}
+}
+@media screen and (max-width: 649px) {
+#menu{
+  display: none;
+}
 }
 @media screen and (min-width: 992px) {
   #headshot{
@@ -257,7 +321,7 @@ display:block !important;
     float:right;
   }
     #headerjidsvg{
-  	left:60px;
+  	left: 84px;
   }
   button.navbar-toggle{
 	margin-right:60px;
@@ -348,4 +412,92 @@ body,
 #work-row{
   	margin-top:200px;
   }
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding:3px 3px 3px 3px;
+    margin-left:20px;
+    text-decoration: none;
+}
+
+li a:hover {
+
+}
+#popup1open{
+  float:right;
+  padding:16px;
+  margin-top:22px;
+  display: block;
+  color: black;
+  font-family: gotham;
+  font-size:.9em;
+}
+#menu{
+  width:auto;
+  height:auto;
+  float: right;
+  margin-top:31px;
+}
+
+#about-row{
+}
+
+#footer-row{
+  margin-right:0px;
+  margin-left:0px;
+}
+
+
+.headerrow{
+  height:90px;
+  padding-left:0px;
+  padding-right:0px;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+}
+.carousel-indicators{
+  margin-left:-54%;
+}
+#widthwrap{
+  width:100%;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+}
+#headerjidsvg{
+  left:15px;
+}
+#menu{
+  margin-right:15px;
+}
+#footer-row{
+  margin-bottom:15px;
+}
+@media only screen and (min-width: 750px) {
+#widthwrap{
+  padding-left:30px;
+  padding-right:30px;
+
+}
+#headerjidsvg{
+  left:30px;
+}
+#menu{
+  margin-right:30px;
+}
+#footer-row{
+  margin-bottom:30px;
+}
 }
