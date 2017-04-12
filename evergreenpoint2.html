@@ -33,46 +33,36 @@ margin-top:20px;
      left: 0;
      right: 0;
      bottom: 0;
-     height:95vh; 
+     height:95vh;3
 }
-.slide1{
+.slide1, .thumb1{
   background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
-   background-repeat: no-repeat;
-   background-position: center center;
-   -webkit-background-size: cover;
-   background-size: cover;
-       top: 0;
-       left: 0;
-       right: 0;
-       bottom: 0;
-       height:95vh; 
   }
-
-.slide2{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide2, .thumb2{
+  background-image: url("img/web/cirillo/Cirilloweblarge1.jpg");
 }
-.slide3{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide3, .thumb3{
+  background-image: url("img/web/cirillo/Cirilloweblarge2.jpg");
 }
-.slide4{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide4, .thumb4{
+  background-image: url("img/web/cirillo/Cirilloweblarge3.jpg");
 }
-.slide5{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide5, .thumb5{
+  background-image: url("img/web/cirillo/Cirilloweblarge4.jpg");
 }
-.slide6{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide6, .thumb6{
+  background-image: url("img/web/cirillo/Cirilloweblarge5.jpg");
 }
-.slide7{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide7, .thumb7{
+  background-image: url("img/web/cirillo/Cirilloweblarge6.jpg");
 }
-.slide8{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide8, .thumb8{
+  background-image: url("img/web/cirillo/Cirilloweblarge7.jpg");
 }
-.slide9{
-  background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
+.slide9, .thumb9{
+  background-image: url("img/web/cirillo/Cirilloweblarge8.jpg");
 }
-.slide10{
+.slide10, .thumb10{
   background-image: url("img/web/cirillo/Cirilloweblarge05.jpg");
 }
 #carousel-bounding-box{
@@ -111,6 +101,28 @@ a.thumbnail img{
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+}
+#testdiv{
+ background-position: center center;
+ -webkit-background-size: cover;
+ background-size: cover;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     height:60px;
+     width:90px;
+opacity: 1;
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+}
+#testdiv:hover{
+  opacity:.6;
+}
+#fivewide{
+  width:550px;
 }
 </style>
 <body>
@@ -201,6 +213,8 @@ a.thumbnail img{
                 <!-- Slider -->
                 <div class="row">
                     <div class="col-xs-12" id="slider">
+                    <p class="header-p black-text text-center">EVERGREEN POINT</p>
+
                         <!-- Top part of the slider -->
                         <div class="row">
                             <div class="col-sm-12 col-centered" id="carousel-bounding-box">
@@ -222,8 +236,7 @@ a.thumbnail img{
                                         <div class="slide5 item" data-slide-number="4">
                                         </div>
 
-                                        <div class="slide6 item" data-slide-number="5">
-                                        </div>
+                                        
                                     </div><!-- Carousel nav -->
                                     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>                                       
@@ -269,32 +282,40 @@ a.thumbnail img{
                         <!-- Bottom switcher of slider -->
                         <div class="row thumbnail-row">
                         <ul class="hide-bullets">
-                        
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-0"><img src="http://placehold.it/170x100&text=one"></a>
+                      <div id="fivewide" class="center-block">
+                            <li class="col">
+                                <a class="thumbnail" id="carousel-selector-0">
+                                  <div id="testdiv" class="thumb1"> 
+                                  </div>
+                                </a>
                             </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/170x100&text=two"></a>
+                            <li class="col">
+                                <a class="thumbnail" id="carousel-selector-1"><div id="testdiv" class="thumb2">
+                                    
+                                  </div></a>
                             </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/170x100&text=three"></a>
+                            <li class="col">
+                                <a class="thumbnail" id="carousel-selector-2"><div id="testdiv" class="thumb3">
+                                    
+                                  </div></a>
                             </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/170x100&text=four"></a>
+                            <li class="col">
+                                <a class="thumbnail" id="carousel-selector-3"><div id="testdiv" class="thumb4">
+                                    
+                                  </div></a>
                             </li>
 
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/170x100&text=five"></a>
+                            <li class="col">
+                                <a class="thumbnail" id="carousel-selector-4"><div id="testdiv" class="thumb5">
+                                    
+                                  </div></a>
                             </li>
-
-                            <li class="col-sm-2">
-                                <a class="thumbnail" id="carousel-selector-5"><img src="http://placehold.it/170x100&text=six"></a>
-                            </li>
+                            </div>
                         </ul>   
-                        </div>              
+                                   
                 </div>
         </div>
 </div>
