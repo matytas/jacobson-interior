@@ -17,10 +17,7 @@
   <![endif]-->
 </head>
 <style>
-.pad-right-30{
-  padding-right:32px;
-  padding-left:30px;
-}
+
 </style>
 <body>
   <div id="widthwrap" class="container">
@@ -36,7 +33,7 @@
         <a href="work.html">
           <h1 class="text-center menu-type">WORK</h1>
         </a>
-        <a href="index.html#about-row">
+        <a id="popup2close" href="index.html#about-row">
           <h1 class="text-center menu-type">ABOUT</h1>
         </a>
         <a href="contact.html">
@@ -60,7 +57,7 @@
       <ul id="menu">
         <li><a class="smoothScroll animsition-link" href="https://jacobsoninteriorblog.wordpress.com" target="_blank"><p>BLOG</p></a></li>
         <li><a class="smoothScroll animsition-link" href="contact.html"><p>CONTACT</p></a></li>
-        <li><a class="animsition-link" href="index.html#about-row"><p>ABOUT</p></a></li>
+        <li><a class=" smoothScroll animsition-link" href="index.html#about-row"><p>ABOUT</p></a></li>
         <li><a class="smoothScroll animsition-link" href="work.html"><p>WORK</p></a></li>
       </ul>
     </div>
@@ -94,7 +91,7 @@
       <br><br>
       Each project begins as a journey toward absolute possibility. My aesthetic is modern and classic but not limited to one style. Impeccable attention to details and a less is more approach is the foundation of which I create my inspired and timeless interiors. I embrace each of my client’s personalities to help them achieve their homes greatest potential but my job is complete when real living begins in a newly created space as ultimately it is the client who brings my work to life."
       <br><br>
-      - Nicole Jacobson
+      - Nichole Jacobson
       
       </p>
     </div>
@@ -148,7 +145,32 @@
           $("#popup1close").click(function(){
               $("#popup1").fadeOut();
           });
+          $("#popup2close").click(function(){
+              $("#popup1").fadeOut();
+          });
         });
+  </script>
+  <script type="text/javascript">
+      $('.smoothScroll').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top-175
+            }, 800); // The number here represents the speed of the scroll in milliseconds
+            return false;
+          }
+        }
+      });
+
+    // The function actually applying the offset
+    function offsetAnchor() {
+        if(location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 175);
+        }
+    }
+
   </script>
 </body>
 </div>
