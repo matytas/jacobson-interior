@@ -1,161 +1,143 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <title>New web page</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <head>
+    <title>New web page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<link rel="stylesheet" href="css/normalize.css">
- <link rel="stylesheet" href="css/newstyles.css"> 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-  <style>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/newstyles.css"> 
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 
-
-  </style>
-</head>
+  </head>
 <body>
-
-<div id="widthwrap" class="container">
-<!--mobile menu-->
-  <div class="popup-container" id="popup1">
-    <p><a href="javascript:void(0)" id="popup1close">X</a></p>
-    <div class="popup-wrapper pop-up-button">
-      <div class="popup-content =">
+<?php include_once("analyticstracking.php") ?>
+  <div id="widthwrap" class="container">
+    <div class="popup-container" id="popup1">
+      <p><a href="javascript:void(0)" id="popup1close">X</a></p>
+      <div class="popup-wrapper pop-up-button">
+      <div class="popup-content">
         <a href="index.html">
-          <h1 class="text-center menu-type">HOME</h1>
+          <h1 class="text-center menu-type max-h-10vh">HOME</h1>
         </a>
         <a href="work.html">
-          <h1 class="text-center menu-type">WORK</h1>
+          <h1 class="text-center menu-type max-h-10vh">WORK</h1>
         </a>
-        <a href="index.html#about-row">
-          <h1 class="text-center menu-type">ABOUT</h1>
+        <a id="popup2close" href="index.html#about-row">
+          <h1 class="text-center menu-type max-h-10vh">ABOUT</h1>
         </a>
         <a href="contact.html">
-          <h1 class="text-center menu-type">CONTACT</h1>
+          <h1 class="text-center menu-type max-h-10vh">CONTACT</h1>
         </a>
         <a href="https://jacobsoninteriorblog.wordpress.com" target="_blank">
-          <h1 class="text-center menu-type">BLOG</h1>
+          <h1 class="text-center menu-type max-h-10vh">BLOG</h1>
+        </a>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row headerrow col-xs-12">
+        <a href="index.html">
+          <img id="headerjidsvg" src="img/jid-logo.svg">
+        </a>
+        <a href="javascript:void(0)" id="popup1open">MENU</a>
+        <ul id="menu">
+          <li><a class="smoothScroll animsition-link" href="https://jacobsoninteriorblog.wordpress.com" target="_blank"><p>BLOG</p></a></li>
+          <li><a class="smoothScroll animsition-link" href="contact.html"><p>CONTACT</p></a></li>
+          <li><a class="animsition-link" href="index.html#about-row"><p>ABOUT</p></a></li>
+          <li><a class="smoothScroll animsition-link" href="work.html"><p>WORK</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="containeryo">
+    	<div id="work-row-one" class="row">
+        <a href="evergreenpoint.html">
+          <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-1">
+            <div class="caption">
+                <p>EVERGREEN POINT</p>
+            </div>
+          </div>
+        </a>
+        <a href="clydehill.html">
+          <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-2">
+            <div class="caption">
+                <p>CLYDE HILL</p>
+            </div>
+          </div>
+        </a>
+        <a href="gigharbor.html">
+          <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-3">
+            <div class="caption">
+                <p>GIG HARBOR</p>
+                </div>
+          </div>
+        </a>
+        <a href="issaquahhighlands.html">
+          <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-4">
+            <div class="caption">
+                <p>ISSAQUAH HIGHLANDS</p>
+                </div>
+          </div>
+        </a>
+        <a href="medina.html">
+          <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-5">
+            <div class="caption">
+              <p>MEDINA</p>
+            </div>
+          </div>
+        </a>
+        <a href="vashonisland.html">
+          <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-6">
+            <div class="caption">
+                <p>VASHON ISLAND</p>
+              </div>
+          </div>
         </a>
       </div>
     </div>
-  </div>
-
-
-  <!--desktop menu-->
-  <div class="container">
-    <div class="row headerrow col-xs-12">
-      <a href="index.html">
-        <img id="headerjidsvg" src="img/jid-logo.svg">
-      </a>
-      <a href="javascript:void(0)" id="popup1open">MENU</a>
-      <ul id="menu">
-        <li><a class="smoothScroll animsition-link" href="https://jacobsoninteriorblog.wordpress.com" target="_blank"><p>BLOG</p></a></li>
-        <li><a class="smoothScroll animsition-link" href="contact.html"><p>CONTACT</p></a></li>
-        <li><a class="animsition-link" href="index.html#about-row"><p>ABOUT</p></a></li>
-        <li><a class="smoothScroll animsition-link" href="work.html"><p>WORK</p></a></li>
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="containeryo">
-	<div id="work-row-one" class="row">
-
-  <a href="evergreenpoint2.html">
-    <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-1">
-      <div class="caption">
-          <p>EVERGREEN POINT</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="clydehill.html">
-    <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-2">
-      <div class="caption">
-          <p>CLYDE HILL</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="gigharbor.html">
-    <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-3">
-      <div class="caption">
-          <p>GIG HARBOR</p>
-          </div>
-    </div>
-  </a>
-
-  <a href="issaquahhighlands.html">
-    <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-4">
-      <div class="caption">
-          <p>ISSAQUAH HIGHLANDS</p>
-          </div>
-    </div>
-  </a>
-
-  <a href="medina.html">
-    <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-5">
-      <div class="caption">
-        <p>MEDINA</p>
-      </div>
-    </div>
-  </a>
-
-  <a href="vashonisland.html">
-    <div class="col-xs-12 col-md-6 pad-top-workbtn work-button-5">
-      <div class="caption">
-          <p>VASHON ISLAND</p>
+    <div id="footer-row" class="row">
+      <div id="footer" class="col-xs-12">
+        <img id="footerjidsvg" class="center-block" src="img/jid-logo.svg">
+        <div id="footerhr" class="center-block"></div>
+        <p class="footertext text-center">227 BELLEVUE WAY NE, WA 98004, SUITE 236</p>
+        <p class="footertext text-center">
+          <a id="nodec" href="mailto:nichole@jacobsoninterior.com?Subject=Inqury" target="_top">NICHOLE@JACOBSONINTERIOR.COM</a>
+        </p>
+        <p class="footertext text-center">
+          <a id="nodec" href="tel:425-531-0140">+1 425.531.0140</a>
+        </p>
+        <div class="icon-container">
+          <a href="facebook.com">
+            <i class="footertext fa-lg text-center fa fa-facebook-official" aria-hidden="true"></i>
+          </a>
+          <a href="instagram.com">
+            <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="twitter.com">
+            <i class="fa fa-lg fa-twitter-square" aria-hidden="true"></i>
+          </a>
         </div>
-    </div>
-  </a>
-  
-  </div>
-  </div>
-  <!--footer-->
-  <div id="footer-row" class="row">
-    <div id="footer" class="col-xs-12">
-      <img id="footerjidsvg" class="center-block" src="img/jid-logo.svg">
-      <div id="footerhr" class="center-block"></div>
-      <p class="footertext text-center">227 BELLEVUE WAY NE, WA 98004, SUITE 236</p>
-      <p class="footertext text-center">
-        <a id="nodec" href="mailto:nichole@jacobsoninterior.com?Subject=Inqury" target="_top">NICHOLE@JACOBSONINTERIOR.COM</a>
-      </p>
-      <p class="footertext text-center">
-        <a id="nodec" href="tel:425-531-0140">+1 425.531.0140</a>
-      </p>
-      <div class="icon-container">
-        <a href="facebook.com">
-          <i class="footertext fa-lg text-center fa fa-facebook-official" aria-hidden="true"></i>
-        </a>
-        <a href="instagram.com">
-          <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="twitter.com">
-          <i class="fa fa-lg fa-twitter-square" aria-hidden="true"></i>
-        </a>
       </div>
     </div>
   </div>
-</div>
-  <script src="js/scripts.js"></script>
   <script src="js/jquery-1.12.0.js"></script>
   <script src="js/bootstrap.min.js"></script>
-        <script>
-    $(document).ready(function(){
-      $(".popup-container").hide();
-      $("#popup1open").click(function(){
-          $("#popup1").fadeIn();
-      });
-      $("#popup1close").click(function(){
-          $("#popup1").fadeOut();
-      });
-  });
-    </script>
+  <script src="js/scripts2.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-97735684-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>

@@ -6,9 +6,7 @@
   margin-left:0px;
   margin-right:0px;
 }
-#carousel-row{
-  width: 95vw;
-}
+
 div.item img{
   width:100%;
 }
@@ -247,7 +245,7 @@ display:block !important;
   right:0px;
   left:0px;
   bottom:0px;
-  z-index:100;
+  z-index:10000000000000;
   background-color:white;
 }
 h1{
@@ -256,8 +254,8 @@ font-family: gotham;
 }
 .pop-up-button{
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  height:100vh;
+  top:-23px;
 }
 #mobilemenubutton{
 
@@ -277,14 +275,20 @@ a h1:hover a{
 
 }
 #popup1close{
-  top: 27px;
-  right: 45px;
+  top: 35px;
+  right: 63px;
   position: absolute;
   font-size: 2.4em;
   color:black;
+  z-index: 100;
 }
 #popup1close:hover{
   text-decoration:none;
+}
+.max-h-10vh{
+  max-height: 10vh;
+  line-height:10vh;
+  min-height:35px;
 }
 .navbar-inverse .navbar-nav>.active>a{
   color:black;
@@ -407,7 +411,10 @@ ul {
 }
 
 li {
-    float: right;
+    float: left;
+}
+ul#menu li{
+  float:right;
 }
 
 li a {
@@ -469,6 +476,7 @@ margin-left:0%;
 }
 #headerjidsvg{
   left:15px;
+  z-index: 10000;
 }
 #menu{
   margin-right:15px;
@@ -558,7 +566,10 @@ transform: translateY(-50%);
   max-width:460px;
   height:30vw;
   max-height:170px;
+
+  box-shadow: -6px 6px 20px rgba(0, 0, 0, 0.3);
 }
+
 #slide-1, #slide-2, #slide-3{
   background-repeat: no-repeat;
   background-position: center center;
@@ -569,16 +580,20 @@ transform: translateY(-50%);
   right: 0;
   bottom: 0;
   height:95vh;
-  max-height:;
 }
 #slide-1{
   background-image: url("../img/web/cirillo/Cirilloweblarge05.jpg");
+
+  background-color: #64827c;
 }
 #slide-2{
   background-image: url("../img/web/highlands/highlandsweb4.jpg");
+
+  background-color: #64827c;
 }
 #slide-3{
-  background-image: url("../img/web/cirillo/Cirilloweblarge05.jpg");
+  background-image: url("../img/web/clyde/clydeweb5.jpg");
+  background-color: #64827c;
 }
 #btn-2{
   background-image: url("../img/web/cirillo/Cirilloweblarge05.jpg");
@@ -737,23 +752,23 @@ border:none;
   background-image: url("../img/web/clyde/clydeweb5.jpg");
 }
 .work-button-3{
-  background-color: #83796C;
-  background-image: url("../img/web/gigharbor/gigharborweb4.jpg");
+  background-color: #1f2d3a;
+  background-image: url("../img/web/gigharbor/gigharborweb1.jpg");
 }
 .work-button-4{
   background-color: #8C624B;
   background-image: url("../img/web/highlands/highlandsweb4.jpg");
 }
 .work-button-5{
-  background-color: #1F1A20;
-  background-image: url("../img/web/gigharbor/gigharborweb4.jpg");
+  background-color: #201c22;
+  background-image: url("../img/web/jacobson/jacobson5.jpg");
 }
 .work-button-6{
-  background-color: #4D564B;
-  background-image: url("../img/web/gigharbor/gigharborweb4.jpg");
+  background-color: #0f250c;
+  background-image: url("../img/web/vashon/vashon1.jpg");
 }
 .work-button-7{
-  background-image: url("../img/web/gigharbor/gigharborweb4.jpg");
+
 }
   .work-button-8{
 }
@@ -776,6 +791,7 @@ border:none;
   transition: all .3s ease;
   padding-left:20px;
   padding-right:20px;
+  z-index: 1000;
 }
 .work-button-1:hover,.work-button-2:hover,.work-button-3:hover,.work-button-4:hover,.work-button-5:hover,.work-button-6:hover,.work-button-7:hover,.work-button-8:hover{
   opacity: .7;
@@ -820,4 +836,166 @@ padding-right:0px;
   padding-left:10px;
   padding-right:10px;
 }
+.carousel-control{
+  font-size:58px!important;
+}
+.vcenter{
+  position: relative;
+  top: 50%;
 
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+
+}
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10{
+ background-repeat: no-repeat;
+ background-position: center center;
+ -webkit-background-size: contain;
+ background-size: cover;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     height:95vh;
+}
+#verticalpic{
+  background-size: contain;
+}
+
+#carousel-bounding-box{
+  height:80vh;
+  padding-left:0px;
+  padding-right:0px;
+}
+div#slider.col-xs-12{
+  padding-left:0px;
+  padding-right:0px;
+}
+a.thumbnail img{
+  height:60px;
+}
+
+.thumbnail-row{
+  max-width:1000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.col-sm-2{
+  margin-left:0;
+}
+#carousel-selector-0, #carousel-selector-1, #carousel-selector-2, #carousel-selector-3, #carousel-selector-4, #carousel-selector-5, #carousel-selector-6, #carousel-selector-7, #carousel-selector-8,#carousel-selector-9 {
+  margin-left:0px;
+
+}
+.thumbnail{
+  border-style:none;
+}
+a.thumbnail img:hover{
+  opacity:.6;
+}
+a.thumbnail img{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.carousel-control{
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+#testdiv{
+ background-position: center center;
+ -webkit-background-size: cover;
+ background-size: cover;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     height:60px;
+     width:90px;
+opacity: 1;
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+}
+#testdiv:hover{
+  opacity:.6;
+}
+#fivewide{
+  width:550px;
+}
+#sixwide{
+  width:661px;
+}
+@media screen and (max-width: 700px) {
+  #fivewide, #sixwide{
+    width:100%;
+  }
+  #testdiv{
+    max-height:60px;
+    height: 72px;
+    width:100%;
+
+  }
+  .thumbnail{
+    padding-left:.3vw;
+    padding-right:.3vw;
+  }
+  li.col{
+    width:20%;
+  }
+  .thumb1{
+    margin-right:0px;
+  }
+  div#slider-thumbs.row{
+    margin-top:-2.3vw;
+  }
+  }
+.bgc{
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  position: relative;
+  height:45vh;
+}
+.gig-harbor-bgc{
+  background-color: #83796C;
+}
+.widthcap{
+  max-width:1300px;
+}
+.carousel-control{
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,0) 100%);
+}
+.carousel-control.right{
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,0) 100%);
+}
+.carousel-control.left{
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,0) 100%);
+}
+
+.popup-content{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
