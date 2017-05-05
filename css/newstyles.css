@@ -796,6 +796,12 @@ border:none;
 .work-button-1:hover,.work-button-2:hover,.work-button-3:hover,.work-button-4:hover,.work-button-5:hover,.work-button-6:hover,.work-button-7:hover,.work-button-8:hover{
   opacity: .7;
 }
+.work-button-1:focus,.work-button-2:focus,.work-button-3:focus,.work-button-4:focus,.work-button-5:focus,.work-button-6:focus,.work-button-7:focus,.work-button-8:focus{
+  opacity: .7;
+}
+.work-button-1:active,.work-button-2:active,.work-button-3:active,.work-button-4:active,.work-button-5:active,.work-button-6:active,.work-button-7:active,.work-button-8:active{
+  opacity: .7;
+}
 div.caption{
   position: absolute;
   bottom:-32px;
